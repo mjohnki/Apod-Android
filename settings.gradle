@@ -16,6 +16,10 @@ dependencyResolutionManagement {
         google()
         maven {
             url = uri("https://maven.pkg.github.com/mjohnki/apod-lib")
+            credentials {
+                username "$githubUser"
+                password "$githubPassword"
+            }
         }
         mavenCentral()
     }
